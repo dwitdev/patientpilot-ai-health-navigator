@@ -1,32 +1,71 @@
+
 # PatientPilot AI
 
-I wanted to build something around healthcare tech, so I put together PatientPilot. It's a Python web app where I can explore fictional patient records, ask questions about them, and experiment with a few care-navigation ideas.
+I wanted to build something around healthcare technology, so I created PatientPilot AI. It's a Python web app where I can explore fictional patient records, ask questions about them, and experiment with how AI could make healthcare information easier to navigate.
 
-**[Live app](https://patientpilot-ai-dwit.streamlit.app/)** · **[GitHub](https://github.com/dwitdev)**
+I started with a basic patient dashboard, added a chatbot, and gradually built more features around care navigation, patient records, and request workflows.
 
-## What I built
+**[Live Application](https://patientpilot-ai-dwit.streamlit.app/)** · **[GitHub Repository](https://github.com/dwitdev/patientpilot-ai-health-navigator)**
 
-- A patient dashboard for sample labs, medications, appointments, allergies, and insurance info
-- A record-search assistant with optional Gemini answers based on the selected patient's data
-- Draft appointment, refill, clinic, and insurance requests with an approval step
-- A read-only FHIR sandbox explorer and hospital search/directions links
-- Patient-specific checks, basic activity logs, and automated Python tests
+## What I Built
 
-## Stack
+- **Patient Dashboard:** A central place to view fictional patient information, including medications, allergies, lab results, appointments, and insurance details.
+- **AI-Powered Assistant:** A patient-specific chatbot that searches available records and can use Google Gemini to explain retrieved information.
+- **Care Actions:** A workflow for drafting appointment inquiries, medication refill inquiries, clinic messages, and insurance questions with an approval step.
+- **FHIR Sandbox Integration:** A read-only interface for exploring structured healthcare data from a public synthetic FHIR sandbox.
+- **Care Navigation:** Hospital search and directions using Google Maps links.
+- **Patient Data Isolation:** Patient switching and session-specific record access to keep fictional patient information separated.
+- **Activity Tracking:** In-session logs for reviewing simulated care actions.
+- **Automated Testing:** Python tests and GitHub Actions workflows for checking application functionality.
 
-**Python** · **Streamlit** · **Google Gemini API** · **JSON / FHIR-style records** · **REST APIs** · **GitHub Actions** · **unittest**
+## Technologies Used
 
-I started with the patient dashboard, added the chatbot, then built out the request workflow and FHIR sandbox features. It was a good way for me to get more comfortable working with Python, external APIs, session state, testing, and web app design.
+**Language:** Python
+
+**Frontend & Framework:** Streamlit
+
+**AI Integration:** Google Gemini API, record retrieval
+
+**Healthcare Data:** JSON, FHIR-style resources, public FHIR sandbox
+
+**APIs & Integrations:** REST APIs, HTTP requests, Google Maps links
+
+**Development Tools:** Git, GitHub, GitHub Actions, Python unittest
+
+**Deployment:** Streamlit Community Cloud
 
 ## Screenshots
 
-### Patient dashboard
-![PatientPilot dashboard](Screenshot%202026-10-30%20002839.png)
+### Patient Dashboard
 
-### Patient records
-![PatientPilot records](Screenshot%202026-10-30%20003010.png)
+![PatientPilot AI - Dashboard](Screenshot%202026-11-02%20005620.png)
 
-### Care workflow
-![PatientPilot workflow](Screenshot%202026-10-30%20003047.png)
+### Patient Chat and Records
 
-This is a personal learning project using **fictional patient data only**. Care requests are simulated and nothing is sent to real doctors, pharmacies, or insurers. It isn't a medical service or a place to enter private health information.
+![PatientPilot AI - Chat and Records](Screenshot%202026-11-02%20005645.png)
+
+### Care Actions Workflow
+
+![PatientPilot AI - Care Actions](Screenshot%202026-11-02%20005731.png)
+
+## What I Learned
+
+Working on PatientPilot gave me more hands-on experience with Python application development, API integration, handling structured data, and building interactive interfaces.
+
+One of the interesting challenges was keeping the chatbot's responses connected to the selected patient's records rather than relying entirely on AI-generated answers.
+
+I also spent time working with session state, testing different workflows, organizing the application into separate modules, and deploying it so other people could try it directly in a browser.
+
+## Important Note
+
+PatientPilot AI is a personal portfolio project built for learning and demonstration purposes.
+
+All patient information used in the application is fictional or synthetic. Care actions are simulated and do not send real appointment requests, prescription requests, or insurance transactions.
+
+The application is not a medical service and should not be used for medical decisions or processing private patient information.
+
+---
+
+**Created by [Dwit Patel](https://github.com/dwitdev)**
+
+**[Try PatientPilot AI](https://patientpilot-ai-dwit.streamlit.app/)**
